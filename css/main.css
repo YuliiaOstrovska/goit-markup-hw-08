@@ -1092,7 +1092,7 @@ body {
 }
 
 .footer-submit {
-  width: 100%;
+  width: 450px;
   display: block;
   margin: auto;
 }
@@ -1104,9 +1104,8 @@ body {
 }
 
 .online-mail {
-  width: 358px;
+  width: 450px;
   height: 50px;
-  padding: 15px 0 15px 16px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1114,7 +1113,6 @@ body {
   outline: transparent;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
   margin-bottom: 20px;
 }
 .online-mail::-moz-placeholder {
