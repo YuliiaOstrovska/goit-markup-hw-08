@@ -975,11 +975,15 @@ body {
 }
 
 .footer {
-  width: 100%;
   display: flex;
   text-align: center;
-  margin-left: 0 auto;
+  margin: 0 auto;
   background: #2F303A;
+}
+@media screen and (min-width: 480px) {
+  .footer {
+    max-width: 480px;
+  }
 }
 
 .logo {
