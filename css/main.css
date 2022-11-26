@@ -1094,8 +1094,7 @@ body {
 .footer-submit {
   width: 570px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .online-form {
