@@ -1092,13 +1092,15 @@ body {
 }
 
 .footer-submit {
-  width: 570px;
+  width: 100%;
   display: block;
   margin: auto;
 }
 
 .online-form {
-  width: 450px;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .online-mail {
