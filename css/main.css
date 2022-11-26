@@ -4,6 +4,8 @@
   --accent-color: #2196F3;
   --primary-white-color: #ffffff;
   --card-set-gap: 30px;
+  --hero-gradient: linear-gradient(rgba(47,48,58,0.4),
+  rgba(47,48,58,0.4)) ;
 }
 
 p,
@@ -486,14 +488,25 @@ body {
   max-width: 480px;
   margin: 0 auto;
   background: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgd.jpg);
+  background-image: var(--hero-gradient), url(/images/hero/hero-bgd-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-tablet-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -501,6 +514,12 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
+    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-besktop-1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-besktop-2x.jpg);
   }
 }
 
@@ -955,37 +974,45 @@ body {
   background-color: #2196F3;
 }
 
-.footer section {
-  width: 1600px;
-}
-
-.footerflex {
-  display: flex;
-  position: relative;
-}
-
 .footer {
+  width: 480px;
+  display: flex;
+  text-align: center;
+  margin-left: 0 auto;
   background: #2F303A;
 }
-.footer .logo-web {
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.logo-web {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #2196F3;
 }
-.footer .logo-studio {
+
+.logo-studio {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
 
 .footer-nav .footer-list + .footer-list {
-  margin-top: 9px;
+  margin-top: 8px;
+}
+
+.footer-contacts {
+  margin-bottom: 60px;
 }
 
 .footer-address {
@@ -993,7 +1020,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
@@ -1004,15 +1031,16 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-soc-links {
-  margin-top: 72px;
-  margin-bottom: 100px;
-  margin-left: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
   width: 206px;
   height: 80px;
 }
@@ -1061,13 +1089,13 @@ body {
 
 .footer-submit {
   width: 570px;
-  height: 86px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .online-form {
-  position: absolute;
-  top: 72px;
-  right: 0px;
+  width: 450px;
 }
 
 .online-mail {
@@ -1082,6 +1110,7 @@ body {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+  margin-bottom: 20px;
 }
 .online-mail::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -1116,6 +1145,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+  position: relative;
 }
 
 .footer-icon-send {

@@ -1,39 +1,42 @@
-.footer section {
-    width: 1600px;
-}
-.footerflex {
-    display: flex;
-    position: relative;
-}
-
 .footer {
+    width: 480px;
+    display: flex;
+    text-align: center;
+    margin-left: 0 auto;
     background: #2F303A;  
-    .logo-web {
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: #2196F3;
-    }
+}
     
-    .logo-studio{
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-    } 
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+} 
+.logo-web {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    color: #2196F3;
 }
 
-// .footer-logo {
-//     display: inline-block;
-//     margin-top: 60px;
-//     margin-bottom: 20px;
-// }
+.logo-studio{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+} 
+
+
+
 .footer-nav .footer-list + .footer-list {
-    margin-top: 9px;
+    margin-top: 8px;
+}
+.footer-contacts {
+    margin-bottom: 60px;
 }
 
 .footer-address {
@@ -41,7 +44,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
@@ -51,15 +54,17 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-soc-links {
-    margin-top: 72px;
-    margin-bottom: 100px;
-    margin-left: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
     width: 206px;
     height: 80px;
 }
@@ -113,13 +118,13 @@
 }
 .footer-submit {
     width: 570px;
-    height: 86px;
-    
+    // height: 86px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .online-form {
-    position: absolute;
-    top: 72px;
-    right: 0px;
+    width: 450px;
 }
 
 .online-mail {
@@ -138,6 +143,7 @@
         color: rgba(255, 255, 255, 0.6);
         font-size: 16px;
     }
+    margin-bottom: 20px;
 }
 
 .online-btn {
@@ -160,6 +166,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    position: relative;
 }
 
 .footer-icon-send {
