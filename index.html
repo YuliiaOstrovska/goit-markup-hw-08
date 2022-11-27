@@ -40,6 +40,45 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="menu-open" data-menu-open><svg class="menu-open-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-mobil-open"></use>
+            </svg></button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+                <div class="mob-menu-top">
+                <button type="button" class="menu-close" data-menu-close><svg class="menu-close-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-mobil-close"></use>
+                </svg></button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link">Студія</a></li>
+                    <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link">Портфоліо</a></li>
+                    <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link">Контакти</a></li>
+                </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-connect">
+                        <ul class="mob-connect__list">
+                            <li class="mob-connect__item">
+                                <a class="mob-connect__tel mob-connect__link link" href="tel:+380961111111"> 
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-connect__item">
+                                <a class="mob-connect__mail mob-connect__link link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-soc">
+                        <ul class="mob-soc-list">
+                            <li class="mob-soc-item link">Instagram</li>
+                            <li class="mob-soc-item soc-before link">Twitter</li>
+                            <li class="mob-soc-item soc-before link">Facebook</li>
+                            <li class="mob-soc-item soc-before link">LinkedIn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main> 
@@ -365,7 +404,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer section">
+    <footer class="footer container section">
         <div class="footer-container footerflex">
             <div class="footer-contacts">
                 <a class="logo" href="index.html"><span class="logo__logo-web logo__logo-web--wite">Web</span><span class="logo__logo-studio logo__logo-studio--wite">Studio</span></a>
@@ -477,6 +516,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobil.js"></script>
 </body>
 </html>
 
