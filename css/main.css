@@ -103,6 +103,28 @@ body {
   }
 }
 
+.footer-container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .footer-container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    max-width: 1200px;
+  }
+}
+
 .button {
   font-family: "Roboto";
   font-style: normal;
@@ -488,25 +510,25 @@ body {
   max-width: 480px;
   margin: 0 auto;
   background: #2F303A;
-  background-image: var(--hero-gradient), url(/images/hero/hero-bgd-mob-1x.jpg);
+  background-image: var(--hero-gradient), url(../images/hero/hero-bgd-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-mob-2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-bgd-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-tablet-1x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-bgd-tablet-1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-tablet-2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-bgd-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -514,12 +536,12 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-besktop-1x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-bgd-besktop-1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(/images/hero/hero-bgd-besktop-2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-bgd-besktop-2x.jpg);
   }
 }
 
