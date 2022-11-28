@@ -114,28 +114,6 @@ body {
   }
 }
 
-.footer-container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .footer-container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-container {
-    max-width: 1200px;
-  }
-}
-
 .button {
   font-family: "Roboto";
   font-style: normal;
@@ -1208,19 +1186,29 @@ body {
   background-color: #2196F3;
 }
 
-@media screen and (min-width: 480px) {
-  .footer section {
-    max-width: 1600px;
-  }
+.footer {
+  background: #2F303A;
+  max-width: 1600px;
 }
-@media screen and (min-width: 768px) {
-  .footer section {
-    max-width: 1600px;
+@media screen and (min-width: 480px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer section {
-    max-width: 1600px;
+  .footer {
+    padding-top: 60px;
+    padding-left: 215px;
+    border: 1px solid green;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container .footer {
+    width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1234,6 +1222,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
+    width: 1200px;
     display: flex;
     position: relative;
   }
@@ -1242,6 +1231,11 @@ body {
 .footer-logo {
   display: block;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1262,6 +1256,7 @@ body {
   .footer-contacts {
     margin-left: 0px;
     margin-right: 0px;
+    text-align: start;
   }
 }
 
@@ -1275,9 +1270,6 @@ body {
   }
 }
 
-.footer {
-  background: #2F303A;
-}
 @media screen and (min-width: 1200px) {
   .footer .logo-web {
     font-family: "Raleway";
@@ -1336,8 +1328,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-soc-links {
-    margin-top: 72px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 70px;
     width: 206px;
     height: 80px;
@@ -1390,21 +1382,27 @@ body {
   .footer-submit {
     display: block;
     text-align: center;
+    left: 0px;
+    position: relative;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-submit {
     width: 570px;
     height: 86px;
+    margin-left: auto;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .online-form {
-    position: absolute;
-    top: 72px;
-    right: 0px;
-  }
+.connect-submit {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1416,7 +1414,15 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .connect-wrap {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .online-form {
+    top: 0px;
   }
 }
 
@@ -1464,6 +1470,11 @@ body {
 @media screen and (min-width: 480px) {
   .online-btn {
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .online-btn {
+    margin: 0;
   }
 }
 
