@@ -1187,7 +1187,6 @@ body {
 }
 
 .footer {
-  max-width: 1600px;
   background: #2F303A;
 }
 @media screen and (min-width: 480px) {
@@ -1210,7 +1209,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 5px solid blue;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1218,7 +1216,6 @@ body {
     width: 768px;
     display: flex;
     flex-wrap: wrap;
-    border: 5px solid green;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1228,7 +1225,6 @@ body {
     position: relative;
     padding-left: 0;
     padding-right: 0;
-    border: 5px solid red;
   }
 }
 
@@ -1261,6 +1257,7 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     text-align: start;
+    margin-bottom: 0px;
   }
 }
 
@@ -1366,12 +1363,12 @@ body {
 @media screen and (min-width: 768px) {
   .connect {
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 72px;
   }
 }
 @media screen and (min-width: 1200px) {
   .connect {
-    margin-top: 60px;
+    margin-top: 72px;
   }
 }
 
@@ -1383,6 +1380,11 @@ body {
 @media screen and (min-width: 480px) {
   .footer-soc-list {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-list {
+    margin-bottom: 0px;
   }
 }
 
@@ -1432,7 +1434,7 @@ body {
     width: 570px;
     height: 86px;
     margin-right: 0px;
-    margin-top: 60px;
+    margin-top: 72px;
   }
 }
 
