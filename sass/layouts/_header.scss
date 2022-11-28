@@ -4,6 +4,10 @@
     justify-content: start;
     border-bottom: 1px solid #ECECEC;
     padding: 16px 0px 16px 15px;
+    @media screen and (min-width: 768px) {
+        padding: 0px;
+        
+    }
     
 }
 
@@ -106,7 +110,7 @@
         padding-bottom: 32px;
         .contacts__link {
         font-style: normal;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
@@ -201,8 +205,8 @@
     
 }
 .menu-close {
-    width: 40px;
-    height: 40px;
+    width: 18px;
+    height: 18px;
     padding: 0px;
     border: 0px solid transparent;
     background-color: transparent;
