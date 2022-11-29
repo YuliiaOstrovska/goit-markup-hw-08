@@ -2,7 +2,7 @@
 .footer {
     // max-width: 1600px;
     background: #2F303A;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px)  {
         // padding-top: 60px;
         padding-bottom: 60px;
     }    
@@ -36,7 +36,7 @@
 }
 .footer-container {
     // position: relative;
-    @media screen and (min-width: 320px) and (max-width: 479px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
         width: 479px;
         padding-left: 0;
         padding-right: 0;
@@ -47,7 +47,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        // border: 5px solid blue;
+        border: 5px solid blue;
     };
     @media screen and (min-width: 768px) {
         width: 768px;
@@ -75,7 +75,7 @@
     };
 }
 .footer-contacts {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: block;
         text-align: center;
         padding-top: 60px;
@@ -192,7 +192,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     
-    @media screen and (min-width: 479px) {
+    @media screen and (min-width: 320px) {
         margin-bottom: 20px;
         margin-top: 60px;
         text-align: center;
@@ -207,7 +207,7 @@
     @media screen and (min-width: 1200px) {
         // margin-bottom: 20px;
         margin-top: 72px;
-        // text-align: center;
+        text-align: start;
         
     };
 }    
@@ -216,7 +216,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         margin-bottom: 60px;
         
     };
@@ -258,7 +258,7 @@
 
 }
 .footer-submit {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: block;
         text-align: center;
         left: 0px;
@@ -301,7 +301,7 @@
 }
 
 .connect-wrap {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: flex;
         flex-direction: column;
         // align-items: center;
@@ -317,7 +317,7 @@
 
 }   
 .online-form {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         // position: relative;
         // top: 0px;
         padding-bottom: 60px;
@@ -372,7 +372,7 @@
     border-radius: 4px;
     position: relative;
     padding-left: 28px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         margin: 0 auto;
         // bottom: 60px;
         
