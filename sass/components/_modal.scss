@@ -13,7 +13,7 @@
 
 }
 .modal {
-    width: 528px;
+    // width: 528px;
     height: 581px;
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -24,6 +24,15 @@
     transform: translate(-50%, -50%) rotate(0) scale(1);
 
     transition: transform 1000ms linear, border-radius 1000ms linear, background-color 1000ms linear;
+    @media screen and (min-width: 320px) {
+        width: 450px;
+    };
+    @media screen and (min-width: 768px) {
+        width: 528px;
+    };
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) rotate(360deg) scale(1.5);
